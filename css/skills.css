@@ -1,0 +1,78 @@
+/* ============== Our Services section start  ============== */
+.section-services {
+    background-color: #f9f9ffde;
+}
+.skill-container {
+ 
+    border-radius: 10px;
+   margin: auto;
+   /* padding: 4rem 1rem; */
+   /* padding-bottom: 4rem;
+    box-shadow: 10px 10px 10px 5px  lightblue; */
+
+}
+.section-services .grid {
+    margin-top: 3rem;
+    gap: 6rem;
+}
+
+.grid  .service-box {
+
+    text-align: center;
+   
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    box-shadow: #212529;
+    box-shadow: 10px 10px 10px 5px  var(--para-tint);
+    transition: all 0.2s linear;
+  
+}
+.service-box:hover,
+.service-box:active {
+    transform: translateY(-3rem);
+}
+
+.service-icon {
+   width: 9rem;
+   height: 9rem;
+   background-color: var(--white);
+   border-radius: 30% 70% 33% 67% / 30% 23% 77% 70% ;
+   padding: 1.4rem 1.8rem;
+   position: relative;
+   color: var(--helper);
+   animation: water-wave 3s linear infinite;
+   border: 1px solid var(--helper);
+}
+
+.service-icon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 90%;
+    border-radius: 30% 70% 33% 67% / 30% 23% 77% 70% ;
+    border: 1px solid var(--helper);
+    animation: water-wave 3s linear infinite;
+}
+
+@keyframes water-wave {
+
+    0% {
+        border-radius: 30% 70% 33% 67% / 30% 23% 77% 70% ;
+    }
+
+    33% {
+        border-radius: 79% 21% 60% 40% / 30% 56% 44% 70% ;
+    }
+
+    66% {
+        border-radius: 84% 16% 77% 23% / 11% 66% 34% 89% ;
+    }
+
+    100% {
+        border-radius: 30% 70% 33% 67% / 30% 23% 77% 70% ;
+    }
+    
+}
